@@ -71,6 +71,7 @@ export class AppComponent {
 
   ngOnDestroy(): void {
     console.log('parent: ngOnDestroy');
+
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
   }

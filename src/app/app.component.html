@@ -3,11 +3,14 @@
   <div class="row">
     <input placeholder="Enter a name" [(ngModel)]="name" />
     <button (click)="addToList()">Add Name</button>
+    <!-- <a routerLink="/others" routerLinkActive="active">Navigate to others</a> -->
   </div>
 </section>
 
 <!-- {{ logHeading(heading) }} -->
 
-<app-child #childCmp [namesList]="names">
+<!-- <app-child #childCmp [namesList]="names">
   <h3 #title>The participants' names</h3>
-</app-child>
+</app-child> -->
+
+<!-- <router-outlet></router-outlet> -->

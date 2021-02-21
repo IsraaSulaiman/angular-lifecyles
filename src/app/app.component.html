@@ -1,0 +1,13 @@
+<section class="container">
+  <h2 #heading>Hello World</h2>
+  <div class="row">
+    <input placeholder="Enter a name" [(ngModel)]="name" />
+    <button (click)="addToList()">Add Name</button>
+  </div>
+</section>
+
+<!-- {{ logHeading(heading) }} -->
+
+<app-child #childCmp [namesList]="names">
+  <h3 #title>The participants' names</h3>
+</app-child>

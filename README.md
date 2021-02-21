@@ -1,47 +1,27 @@
-# Component LifeCycle
+# TestApp
 
-A component instance has a lifecycle, meaning it goes through a sequence of phases that starts when Angular creates the component and ends when the component's class is destroyed and its view template is removed from the DOM.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-Angular constantly checks for any change in the component class memebers or the data-bound properties to re-render the view and the class instance. So, the component's lifecycle continues whenever angular runs change detection. 
+## Development server
 
-# Lifecycle Hooks
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-You can tap into any event in the lifecycle of a component using angular lifecycle methods(hooks). 
-> The hooks give you the opportunity to act on a component or directive instance at the appropriate moment, as Angular creates, updates, or destroys that instance
+## Code scaffolding
 
-There are 8 hooks and they are called in this sequence:
-![alt text](https://codecraft.tv/courses/angular/components/lifecycle-hooks/images/lifecycle-hooks.png)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-The constructor executes before any hooks and it instantiates the component class. You can set class members or inject dependencies here as well.
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## ngOnChanges
+## Running unit tests
 
-* It is called before ngOnInit() and whenever one or more data-bound input properties change.
-* If your component has no inputs, angular won't call ngOnChanges().
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## ngOnInit
+## Running end-to-end tests
 
-* It is called once, after the first ngOnChanges().
-* It is used to initialize the component properties.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## ngDoCheck
-* It is called immediately after ngOnInit() on the first run and after ngOnChanges() on every change detection run
-* You should be cautious when using this hook method since it is called on every run of change detection
-* You can use it to detect and act upon changes that Angular can't or won't detect on its own.
+## Further help
 
-## ngAfterContentInit
-* It is called once after the first ngDoCheck().
-* You want to respond or act upon content projection, meaning when Angular projects external content into the component's view, or into the view that a directive is in.
-
-## ngAfterContentChecked
-
-
-## ngAfterViewInit
-
-## ngAfterViewChecked
-
-## ngOnDestroy
-
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

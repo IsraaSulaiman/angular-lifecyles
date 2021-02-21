@@ -1,0 +1,15 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.row input {
+  padding: 8px 10px;
+}

@@ -1,0 +1,9 @@
+<section class="container">
+  <ng-content></ng-content>
+  <ul *ngIf="namesList && namesList.length > 0">
+    <li *ngFor="let name of namesList">
+      {{ name }}
+    </li>
+  </ul>
+  <p *ngIf="namesList.length === 0">No Participants Found</p>
+</section>
